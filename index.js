@@ -14,7 +14,7 @@ const bodyParser = require("body-parser")
 app.use(cookieParser())
 app.use(bodyParser.json()) 
 
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT ||5000,()=>{
 
  console.log(`server running at ${process.env.PORT}`)
 })
