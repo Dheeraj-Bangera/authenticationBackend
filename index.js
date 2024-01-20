@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser")
 require("dotenv").config()
 const app = express()
 app.use(cors({
-    origin:`${process.env.FRONTEND_URL}`,
+    origin:'https://dheeraj-auth-react.netlify.app/',
     credentials:true,
 }));
 const bodyParser = require("body-parser")
